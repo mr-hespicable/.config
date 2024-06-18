@@ -1,0 +1,31 @@
+/* CSS selector for entire window */
+window {
+    background-color: #32302f;
+    font-size: 15;
+    font-family: Anonymice Pro Nerd Font Mono;
+}
+
+/* CSS selector for the box you type in */
+#input {
+    border: 0px;
+    margin: 5px;
+    background-color: #504945;
+}
+
+#text {
+    margin: 4px;
+    color: #a89974;
+}
+
+#entry:selected {
+    background-color: #a89974;
+}
+
+#text:selected {
+    color: #504945;
+}
+
+/* selector for the scroll window containing inner-box */
+#scroll {
+    margin: 5px;
+}

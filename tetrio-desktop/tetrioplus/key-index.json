@@ -1,0 +1,17 @@
+{
+	"keys": [
+		"version",
+		"whitelistedLoaderDomains",
+		"tetrioPlusEnabled",
+		"backgrounds",
+		"sfxEnabled",
+		"skin",
+		"skinAnim",
+		"skinAnimMeta",
+		"ghost",
+		"ghostAnim",
+		"ghostAnimMeta",
+		"winterCompatEnabled",
+		"advancedSkinLoading"
+	]
+}

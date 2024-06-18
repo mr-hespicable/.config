@@ -1,0 +1,7 @@
+2024/06/15-23:28:57.156 7f29 Reusing MANIFEST /home/leon/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2024/06/15-23:28:57.157 7f29 Recovering log #483
+2024/06/15-23:28:57.189 7f29 Level-0 table #488: started
+2024/06/15-23:28:57.217 7f29 Level-0 table #488: 3167427 bytes OK
+2024/06/15-23:28:57.219 7f29 Recovering log #487
+2024/06/15-23:28:57.219 7f29 Reusing old log /home/leon/.config/discord/Local Storage/leveldb/000487.log 
+2024/06/15-23:28:57.228 7f29 Delete type=0 #483

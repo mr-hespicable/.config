@@ -1,0 +1,17 @@
+2024/06/15-23:03:41.129 6ff1 Reusing MANIFEST /home/leon/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2024/06/15-23:03:41.140 6ff1 Recovering log #479
+2024/06/15-23:03:41.173 6ff1 Level-0 table #482: started
+2024/06/15-23:03:41.206 6ff1 Level-0 table #482: 2931057 bytes OK
+2024/06/15-23:03:41.213 6ff1 Delete type=0 #479
+2024/06/15-23:03:41.214 6ff1 Compacting 4@0 + 2@1 files
+2024/06/15-23:03:41.264 6ff1 Generated table #484@0: 352 keys, 2191207 bytes
+2024/06/15-23:03:41.319 6ff1 Generated table #485@0: 106 keys, 2757941 bytes
+2024/06/15-23:03:41.347 6ff1 Generated table #486@0: 10 keys, 702417 bytes
+2024/06/15-23:03:41.347 6ff1 Compacted 4@0 + 2@1 files => 5651565 bytes
+2024/06/15-23:03:41.358 6ff1 compacted to: files[ 0 4 1 0 0 0 0 ]
+2024/06/15-23:03:41.359 6ff1 Delete type=2 #477
+2024/06/15-23:03:41.359 6ff1 Delete type=2 #471
+2024/06/15-23:03:41.359 6ff1 Delete type=2 #475
+2024/06/15-23:03:41.359 6ff1 Delete type=2 #480
+2024/06/15-23:03:41.359 6ff1 Delete type=2 #472
+2024/06/15-23:03:41.359 6ff1 Delete type=2 #482

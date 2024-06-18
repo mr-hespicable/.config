@@ -1,0 +1,130 @@
+{
+    "layer": "top",
+    "position": "top", 
+    "height": 24,
+
+    "modules-left":   ["disk", "memory", "cpu", "bluetooth", "custom/spotify"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right":  ["network",  "hyprland/language", "clock#time", "group/group-tray"],
+
+    "group/group-tray": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "group-tray",
+            "transition-left-to-right": true,
+        },
+        "modules": [
+            "custom/tray-icon",
+            "tray"
+        ]
+    },
+    "bluetooth": {
+        // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+        "format": "<span size='10000' foreground='#458588'></span>  {status}",
+        "format-disabled": "", // an empty format will hide the module
+        "format-connected": "<span size='10000' foreground='#458588'></span> {num_connections} connected",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    },
+
+    "custom/tray-icon": {
+        "tooltip": false,
+        "format": "<span size='14000'>󰍞</span>"
+    },
+
+    "cpu": {
+        "interval": 1,
+        "format": "<span size='10000' foreground='#d79921'> </span> {}%",
+        "tooltip": false,
+    },
+
+    "custom/packages": {
+        "exec-if": "ping google.com -c 1 &> /dev/null",
+        "exec": "checkupdates | wc -l",
+        "interval": "1800",
+        "format": "<span size='10000' foreground='#d79921'> </span>{} ",
+        "tooltip": false,
+        "on-click-right-release": "checkupdates | zenity --text-info",
+        "on-click-release": "bash $HOME/.config/waybar/scripts/packages.sh"
+    },
+
+    "custom/spotify": {
+        "exec-if": "pgrep -x spotify",
+        "exec": "$HOME/.config/waybar/scripts/spotify.sh",
+        "interval": 1,
+        "format": "<span size='10000' foreground='#98971a'> </span>{}",
+        "tooltip": false,
+        "on-click-release": "playerctl -p spotify play-pause",
+        "on-click-right-release": "playerctl -p spotify next"
+    },
+
+    "hyprland/language": {
+        "format": "<span size='9000' foreground='#d79921'>  </span>{}",
+        "format-en": "ENG",
+        "tooltip": false
+    },
+
+    "disk": {
+        "interval": 120,
+        "format": "<span foreground='#d79921'>   </span>{used}",
+    },
+
+    "memory": {
+        "interval": 1,
+        "format": "<span foreground='#d79921'>   </span>{used} GB",
+        "max-length": 20,
+        "tooltip": false,
+        "on-click-release": "bash $HOME/.config/waybar/scripts/ram.sh"
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click-release": "activate",
+        "sort-by-numbers": false,
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "format-icons": {
+            "1": "I",
+            "2": "II",
+            "3": "III",
+            "4": "IV",
+            "5": "V",
+            "6": "VI",
+            "7": "VII",
+            "8": "VIII",
+            "9": "IX",
+            "10": "X",
+        }
+    },
+
+    "tray": {
+        "icon-size": 14,
+        "spacing": 10,
+        "show-passive-items": true
+    },
+
+    "clock#time": {
+        "interval": 1,
+        "format": "<span foreground='#d79921' size='10000'> </span>{:%I:%M %p} ",
+        "tooltip": false,
+        "on-click-right-release": "bash $HOME/.config/waybar/launch.sh",
+        "on-click-release": "bash $HOME/.config/waybar/scripts/date.sh",
+        "tooltip": false
+
+    },
+
+    "network": {
+        // "format-wifi": "<span foreground='#d79921'>󰤨   </span>{essid}   <span foreground='#d79921'>   </span>{bandwidthDownBytes} ",
+        "format-wifi": "<span foreground='#d79921'>   </span>{bandwidthDownBytes} ",
+        "format-ethernet": "<span foreground='#d79921'>  </span>{essid} ",
+        "format-disconnected": "<span foreground='#d79921'>󰤭 </span>   Disconnected ",
+        "interval": 1,
+        "on-click-release": "bash $HOME/.local/bin/wifi-menu.sh",
+        "on-click-right-release": "$HOME/.config/waybar/scripts/connected-network.sh",
+        "tooltip": false
+    },
+}
+
+// vim:ft=jsonc
