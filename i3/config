@@ -252,3 +252,19 @@ gaps inner 0
 gaps outer 0
 
 smart_borders on
+
+
+
+##############
+### i3-bar ###
+##############
+
+bar {
+        # disable clickong on workspace buttons
+        bindsym button1 nop
+
+        status_command i3status
+
+
+    }
+
