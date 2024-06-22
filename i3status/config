@@ -16,6 +16,7 @@ general {
     separator = "|"
 }
 
+order += "text"
 order += "cpu_temperature 0"
 order += "wireless _first_"
 order += "ethernet _first_"
@@ -29,8 +30,8 @@ cpu_temperature 0 {
 }
 
 wireless _first_ {
-        format_up = "CONNECTED TO %essid (%bitrate)"
-        format_down = "W: down"
+        format_up = "✓ %essid (%bitrate)"
+        format_down = "wifi down"
 }
 
 ethernet _first_ {
@@ -52,11 +53,11 @@ disk "/" {
 }
 
 memory {
-        format = "%used of %available used"
+        format = "%used/%available used"
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
 }
 
 tztime local {
-        format = "%A, %B %d, %Y. %I:%M:%S"
+        format = "%A, %B %d. %I:%M:%S"
 }
