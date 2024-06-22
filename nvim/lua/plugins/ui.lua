@@ -10,6 +10,7 @@ return {
                 config = {
                     week_header = {
                         enable = true,
+                        concat = "| 兵久而國利者，未之有",
                     },
                     shortcut = {
                         { desc = "󰊳 Update", group = "@property", action = "Lazy update", key = "u" },
@@ -22,18 +23,14 @@ return {
                             key = "f",
                         },
                         {
-                            desc = " Apps",
-                            group = "DiagnosticHint",
-                            action = "Telescope app",
-                            key = "a",
-                        },
-                        {
                             desc = " dotfiles",
                             group = "Number",
-                            action = "Neotree action=focus source=filesystem position=float toggle=true dir=/home/leon/.config/ ",
+                            action = "Neotree action=focus source=filesystem position=float toggle=true dir=/home/leon/.config/",
                             key = "d",
                         },
                     },
+
+                    packages = { enable = true },
                 },
             }
 
