@@ -8,6 +8,7 @@ abbr -a ali '$EDITOR ~/.config/fish/abr.fish'
 abbr -a alr '$EDITOR ~/.config/alacritty/alacritty.yml'
 abbr -a cat bat
 abbr -a conf 'cd ~/.config/'
+abbr -a fishrc '$EDITOR ~/.config/fish/config.fish'
 abbr -a grep 'grep --color=auto'
 abbr -a glp "git log --graph --pretty=format:'%C(yellow)%h%C(auto)%d%Creset %s %C(white)- %an, %ar%Creset'"
 abbr -a gla 'git log --all --graph --decorate --oneline'
@@ -16,10 +17,10 @@ abbr -a muttrc 'cd ~/.config/mutt/;$EDITOR ~/.config/mutt/muttrc'
 abbr -a python python3.12
 abbr -a se 'fzf | xargs -r $EDITOR'
 abbr -a sv sudoedit
+abbr -a tar "tar -zvxf"
 abbr -a tiny 'tiny -c ~/.config/tiny/config.yml'
 abbr -a vim $EDITOR
 abbr -a vimrc '$EDITOR ~/.config/nvim/init.lua'
-abbr -a fishrc '$EDITOR ~/.config/fish/config.fish'
 
 # # Directory
 abbr -a md mkdir -p

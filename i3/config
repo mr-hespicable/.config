@@ -24,9 +24,6 @@ font -misc-anonymicepro nerd font mono-medium-r-normal--0-0-0-0-m-0-iso10646-1
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
-
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
@@ -38,11 +35,14 @@ exec --no-startup-id nm-applet
 # Wallpaper autostart
 exec_always --no-startup-id nitrogen --restore
 
-# Polybar autostart
-exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
-
 # Power saver start
 exec --no-startup-id sudo systemctl enable tlp.service
+
+# Set caps lock to escape
+exec --no-startup-id setxkbmap -option caps:escape
+
+# Remove tap to click for trackpad
+exec --no-startup-id xinput set-prop "Apple SPI Touchpad" "libinput Tapping Enabled" 0
 
 
 ##########################
@@ -51,6 +51,9 @@ exec --no-startup-id sudo systemctl enable tlp.service
 
 # kill focused window
 bindsym $mod+q kill
+
+# go to lockscreen
+bindsym $mod+x exec ~/.config/scripts/lock
 
 # change focus
 bindsym $mod+h focus left
@@ -89,7 +92,7 @@ bindsym $mod+Shift+f fullscreen toggle
 workspace_layout tabbed
 
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+#bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -262,9 +265,6 @@ smart_borders on
 bar {
         # disable clickong on workspace buttons
         bindsym button1 nop
-
         status_command i3status
-
-
     }
 
