@@ -1,6 +1,7 @@
 lastupdatecheck: 0
 recentrepos:
     - /home/leon/.config
+    - /home/leon/.local/share/nvim/lazy/dashboard-nvim
     - /home/leon/code/sketch_os
 startuppopupversion: 5
 lastversion: 0.42.0
