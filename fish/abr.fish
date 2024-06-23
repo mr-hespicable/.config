@@ -5,7 +5,7 @@ end
 abbr -a !! --position anywhere --function last_history_item
 
 abbr -a ali '$EDITOR ~/.config/fish/abr.fish'
-abbr -a alr '$EDITOR ~/.config/alacritty/alacritty.yml'
+abbr -a alr '$EDITOR ~/.config/alacritty/alacritty.toml'
 abbr -a cat bat
 abbr -a conf 'cd ~/.config/'
 abbr -a fishrc '$EDITOR ~/.config/fish/config.fish'

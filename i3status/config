@@ -24,6 +24,7 @@ order += "disk /"
 order += "memory"
 order += "battery all"
 order += "tztime local"
+order += "load"
 
 cpu_temperature 0 {
         format = "CPU: %degrees°C"
@@ -60,4 +61,8 @@ memory {
 
 tztime local {
         format = "%A, %B %d. %I:%M:%S"
+}
+
+load {
+        format = "%1min"
 }

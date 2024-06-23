@@ -7,26 +7,33 @@ return {
         opts = function()
             local opts = {
                 theme = "hyper",
+                disable_move = true,
                 config = {
                     week_header = {
                         enable = true,
-                        concat = "| 兵久而國利者，未之有",
+                        concat = ": 兵久而國利者，未之有",
                     },
                     shortcut = {
-                        { desc = "󰊳 Update", group = "@property", action = "Lazy update", key = "u" },
+                        { desc = "󰊳 update", group = "@property", action = "Lazy update", key = "u" },
                         {
                             icon = " ",
                             icon_hl = "@variable",
-                            desc = "Files",
+                            desc = "files",
                             group = "Label",
                             action = "Telescope find_files",
                             key = "f",
                         },
                         {
-                            desc = " dotfiles",
+                            desc = " config",
                             group = "Number",
-                            action = "Neotree action=focus source=filesystem position=float toggle=true dir=/home/leon/.config/",
+                            action = "Neotree action=focus source=filesystem position=float toggle=true dir=/home/leon/.config/nvim/",
                             key = "d",
+                        },
+                        {
+                            desc = "❌ quit",
+                            group = "Number",
+                            action = "quit",
+                            key = "q",
                         },
                     },
 

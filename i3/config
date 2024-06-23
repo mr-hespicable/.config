@@ -12,7 +12,6 @@
 set $mod Mod4
 
 # Font for window titles.
-#font npango:DejaVu Sans Mono 10
 font -misc-anonymicepro nerd font mono-medium-r-normal--0-0-0-0-m-0-iso10646-1
 
 

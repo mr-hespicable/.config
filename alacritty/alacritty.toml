@@ -59,22 +59,22 @@ blinking = "off"
 shape = "Underline"
 
 [font]
-size = 7
+size = 11
 
 [font.bold]
-family = "Anonymice Pro Nerd Font"
+family = "monospace"
 style = "Bold"
 
 [font.bold_italic]
-family = "Anonymice Pro Nerd Font"
+family = "monospace"
 style = "Bold Italic"
 
 [font.italic]
-family = "Anonymice Pro Nerd Font"
+family = "monospace"
 style = "Italic"
 
 [font.normal]
-family = "Anonymice Pro Nerd Font Mono"
+family = "monospace"
 style = "Regular"
 
 [window]
