@@ -14,7 +14,7 @@ return {
                         concat = ": 兵久而國利者，未之有",
                     },
                     shortcut = {
-                        { desc = "󰊳 update", group = "@property", action = "Lazy update", key = "u" },
+                        { desc = "󰊳 update", group = "String", action = "Lazy update", key = "u" },
                         {
                             icon = "",
                             icon_hl = "@variable",
@@ -25,8 +25,8 @@ return {
                         },
                         {
                             desc = " config",
-                            group = "Number",
-                            action = "Neotree action=focus source=filesystem position=float toggle=true dir=/home/leon/.config/nvim/",
+                            group = "@property",
+                            action = "Telescope find_files cwd=/home/leon/.config/nvim/",
                             key = "c",
                         },
                         {
@@ -41,7 +41,14 @@ return {
                         limit = 8,
                         action = "Telescope find_files cwd=",
                     },
-                    packages = { enable = true },
+                    packages = { enable = false },
+                    footer = {
+                        "",
+                        "🚀 切れる道具は良い仕事をする",
+                    },
+                },
+                preview = {
+                    file_height = 50,
                 },
             }
 
