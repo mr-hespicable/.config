@@ -124,10 +124,9 @@ set $ws10 "0"
 
 #assign workspaces
 assign [class="alacritty"] $ws1
-assign [class="alacritty"] $ws2
-assign [class="Firefox"] $ws3
-assign [class="Discord"] $ws4
-assign [class="Spotify"] $ws5
+assign [class="Firefox"] $ws2
+assign [class="Discord"] $ws3
+assign [class="Spotify"] $ws4
 
 
 # switch to workspace

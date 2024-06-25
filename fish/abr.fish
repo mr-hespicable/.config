@@ -37,9 +37,9 @@ abbr -a mr neomutt
 
 #cargo
 abbr -a c cargo
-abbr -a ct 'cargo test'
-abbr -a cb 'cargo build'
-abbr -a cr 'cargo run'
+abbr -a ct 'cargo ltest'
+abbr -a cb 'cargo lbuild'
+abbr -a cr 'cargo lrun'
 abbr -a cleawr clear
 abbr -a clwear clear
 abbr -a cl clear
