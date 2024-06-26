@@ -1,0 +1,11 @@
+/*
+ * This file contains list of bookmarked directories.
+ * 
+ */
+[
+    {
+        "path": "/home/leon/downloads",
+        "name": "downloads",
+        "origin": ["lsp", "gtk3"]
+    }
+]
