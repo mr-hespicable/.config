@@ -6,10 +6,12 @@ abbr -a !! --position anywhere --function last_history_item
 
 abbr -a ali '$EDITOR ~/.config/fish/abr.fish'
 abbr -a alr '$EDITOR ~/.config/alacritty/alacritty.toml'
+abbr -a brmax 'brightnessctl set 100%'
+abbr -a brmin 'brightnessctl set 10%'
 abbr -a cat bat
 abbr -a conf 'cd ~/.config/'
 abbr -a fishrc '$EDITOR ~/.config/fish/config.fish'
-abbr -a grep 'grep --color=auto'
+abbr -a grep rg
 abbr -a glp "git log --graph --pretty=format:'%C(yellow)%h%C(auto)%d%Creset %s %C(white)- %an, %ar%Creset'"
 abbr -a gla 'git log --all --graph --decorate --oneline'
 abbr -a i3conf "$EDITOR ~/.config/i3/config"
@@ -20,7 +22,7 @@ abbr -a sv sudoedit
 abbr -a tar "tar -zvxf"
 abbr -a tiny 'tiny -c ~/.config/tiny/config.yml'
 abbr -a vim $EDITOR
-abbr -a vimrc '$EDITOR ~/.config/nvim/init.lua'
+abbr -a vimrc '$EDITOR ~/.config/nvim/'
 
 # # Directory
 abbr -a md mkdir -p
@@ -43,7 +45,7 @@ abbr -a cr 'cargo lrun'
 abbr -a cleawr clear
 abbr -a clwear clear
 abbr -a cl clear
-abbr -a e lvim
+abbr -a e nvim
 abbr -a lzg lazygit
 abbr -a m make
 abbr -a o open
