@@ -46,15 +46,16 @@ abbr -a cleawr clear
 abbr -a clwear clear
 abbr -a cl clear
 abbr -a e nvim
-abbr -a lzg lazygit
 abbr -a m make
 abbr -a o open
 abbr -a g git
-abbr -a gu gitui
+abbr -a vimdiff 'nvim -d'
+abbr -a zt zathura
+
+#git
 abbr -a gc 'git checkout'
 abbr -a ga 'git add -p'
-abbr -a vimdiff 'nvim -d'
 abbr -a gah 'git stash; and git pull --rebase; and git stash pop'
-abbr -a pr 'gh pr create -t (git show -s --format=%s HEAD) -b (git show -s --format=%B HEAD | tail -n+3)'
-abbr -a gtup 'git add . && git commit -am "tie-up commit" && git push'
-abbr -a zt zathura
+abbr -a pr 'gh pr create -t (git show -s --format=%s HEAD) -b (git show -s --format=%B HEAD | tail -n +3)'
+abbr -a gtup 'git add . && git commit -am "quik-commit (use git diff)" && git push'
+abbr -a lzg lazygit
