@@ -1,9 +1,9 @@
-autologin.canonical_username="tu1pyh9iu6644ls8p05pt3vg8"
-autologin.saved_credentials="{\"tu1pyh9iu6644ls8p05pt3vg8\":[\"tu1pyh9iu6644ls8p05pt3vg8\",\"JUqIqLQ3VZA+Y2QXsQKrqq1hww2boZ0T90pgjiYCWohqwWrDOiOv6OYFNQJw1EaSGmQ1gA9jygbHiHfPkDBhzDNUxiZZIy+SZArETby/2zwIFkoi44oz1/VPYuOpFFmhmYBkSJ/jCQhMlmycTGk/IExhtxUosiKGrvbLVtOyfO0t03OdD6cTmIUvYdJoczYiS/04ayBZWk9da9kdN3JdEPBGGp3qMg5+R9lcnMqO0fzVzqP7iHGQGtmSvrV8O3SAt9h9Ear1lszZFS11cjkgnnhLYdibayQ67vqI9ysCQjIxA9Awxcu54q00J+I3j6+MrNjhVEcx7zhwaA6PT0gArw==\"]}"
-autologin.blob="JUqIqLQ3VZA+Y2QXsQKrqq1hww2boZ0T90pgjiYCWohqwWrDOiOv6OYFNQJw1EaSGmQ1gA9jygbHiHfPkDBhzDNUxiZZIy+SZArETby/2zwIFkoi44oz1/VPYuOpFFmhmYBkSJ/jCQhMlmycTGk/IExhtxUosiKGrvbLVtOyfO0t03OdD6cTmIUvYdJoczYiS/04ayBZWk9da9kdN3JdEPBGGp3qMg5+R9lcnMqO0fzVzqP7iHGQGtmSvrV8O3SAt9h9Ear1lszZFS11cjkgnnhLYdibayQ67vqI9ysCQjIxA9Awxcu54q00J+I3j6+MrNjhVEcx7zhwaA6PT0gArw=="
-core.clock_delta=19
-network.proxy.mode=1
 autologin.username="tu1pyh9iu6644ls8p05pt3vg8"
+autologin.blob="JUqIqLQ3VZA+Y2QXsQKrqq1hww2boZ0T90pgjiYCWohqwWrDOiOv6OYFNQJw1EaSGmQ1gA9jygbHiHfPkDBhzDNUxiZZIy+SZArETby/2zwIFkoi44oz1/VPYuOpFFmhmYBkSJ/jCQhMlmycTGk/IExhtxUosiKGrvbLVtOyfO0t03OdD6cTmIUvYdJoczYiS/04ayBZWk9da9kdN3JdEPBGGp3qMg5+R9lcnMqO0fzVzqP7iHGQGtmSvrV8O3SAt9h9Ear1lszZFS11cjkgnnhLYdibayQ67vqI9ysCQjIxA9Awxcu54q00J+I3j6+MrNjhVEcx7zhwaA6PT0gArw=="
+autologin.saved_credentials="{\"tu1pyh9iu6644ls8p05pt3vg8\":[\"tu1pyh9iu6644ls8p05pt3vg8\",\"JUqIqLQ3VZA+Y2QXsQKrqq1hww2boZ0T90pgjiYCWohqwWrDOiOv6OYFNQJw1EaSGmQ1gA9jygbHiHfPkDBhzDNUxiZZIy+SZArETby/2zwIFkoi44oz1/VPYuOpFFmhmYBkSJ/jCQhMlmycTGk/IExhtxUosiKGrvbLVtOyfO0t03OdD6cTmIUvYdJoczYiS/04ayBZWk9da9kdN3JdEPBGGp3qMg5+R9lcnMqO0fzVzqP7iHGQGtmSvrV8O3SAt9h9Ear1lszZFS11cjkgnnhLYdibayQ67vqI9ysCQjIxA9Awxcu54q00J+I3j6+MrNjhVEcx7zhwaA6PT0gArw==\"]}"
+core.clock_delta=31
+network.proxy.mode=1
+autologin.canonical_username="tu1pyh9iu6644ls8p05pt3vg8"
 app.enable-chrome-runtime=true
 app.window.position.saved=true
 app.window.position.height=1554
@@ -11,4 +11,4 @@ app.window.position.y=22
 storage.last-location="/home/leon/.cache/spotify/Storage"
 app.window.state.saved=true
 app.window.position.width=2560
-app.last-launched-version="1.2.37.701.ge66eb7bc"
+app.last-launched-version="1.2.40.599.g606b7f29"

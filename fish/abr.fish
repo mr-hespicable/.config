@@ -56,6 +56,6 @@ abbr -a zt zathura
 abbr -a gc 'git checkout'
 abbr -a ga 'git add -p'
 abbr -a gah 'git stash; and git pull --rebase; and git stash pop'
-abbr -a pr 'gh pr create -t (git show -s --format=%s HEAD) -b (git show -s --format=%B HEAD | tail -n +3)'
-abbr -a gtup 'git add . && git commit -am "quik-commit (use git diff)" && git push'
+abbr -a pr 'gh issue list && gh pr create -t (git show -s --format=ref)'
+abbr -a gtup 'git add . && git commit -am "quick-commit (use git diff)" && git push'
 abbr -a lzg lazygit

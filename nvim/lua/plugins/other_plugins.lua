@@ -304,4 +304,7 @@ return {
         optional = true,
         opts = { ensure_installed = { "codelldb" } },
     },
+    {
+        "Canop/nvim-bacon",
+    },
 }
